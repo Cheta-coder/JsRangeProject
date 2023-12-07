@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range</title>
+    
+    <style>
+        main{
+            background-color: plum;
+        }
+        form{
+            display: grid;
+            grid-template-areas: "div1 div2";
+        }
+        label{
+            font-size: large;
+            font-weight: bold;
+        }
+        .div1{
+            grid-area: div1;
+        }
+        .div2{
+            grid-area: div2;
+        }
+        .p1, .p2{
+            margin-left: 5%;
+            background-color: white;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1>Che-Pharm's Range Application</h1>
+            <hr>
+        </header>
+        <form>
+            <div class="div1">
+                <label for="range">Select a range value</label>
+                <input type="range" name="range" class="range" min="1000" max="5000" step="100">
+            </div>
+
+            <div class="div2">
+                <label for="number">Select a number value</label>
+                <input type="number" name="number" class="number" min="1000" max="5000" step="100">
+            </div>
+
+            <!-- <button>Submit</button>
+            
+            <button class="btn2">Submit2</button> -->
+        </form>
+        <p class="p1"></p>
+        <p class="p2"></p>
+        
+        <a href="jsBreakandContinue.html">Click here to see jsBreakandContinue.html</a>
+    </main>
+    <script src="range.js"></script>
+</body>
+</html>
