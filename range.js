@@ -9,23 +9,6 @@ let p2 = document.querySelector('.p2');
 
 paragragh.innerHTML = range.value;
 
-// range.addEventListener('input', (e) =>{
-//     range.value = number.value
-//     number.value = range.value
-//     console.log(numberValue)
-//     paragragh.innerHTML = range.value;
-
-//     e.preventDefault()
-// })
-// number.addEventListener('input', (e) =>{
-//     rangeValue = numberValue
-
-//     e.preventDefault()
-// })
-// range.value = number.value
-
-
-
 let checkValue = () => {
     paragragh.innerHTML = range.value;
     rangeValue = range.value;
@@ -52,20 +35,11 @@ let checkValue = () => {
 
 range.addEventListener('change', checkValue)
 
-// button.addEventListener('click', (e) =>{
-//     range.value = number.value
-//     paragragh.innerHTML = range.value;
-    
-//     e.preventDefault()
-// })
-// button2.addEventListener('click', (e) =>{
-//     number.value = range.value
-//     e.preventDefault()
-// })
 range.addEventListener('change', ()=>{
     number.value = range.value
 })
 number.addEventListener('keyup', ()=>{
     range.value = number.value
+    checkValue()
     paragragh.innerHTML = range.value;
 })
